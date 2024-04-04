@@ -1,0 +1,34 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio_05 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int c1, n1, c2, n2;
+		double v1, v2, valorPago1, valorPago2, total;
+		
+		c1 = sc.nextInt();
+		n1 = sc.nextInt();
+		v1 = sc.nextDouble();
+		
+		valorPago1 = n1 * v1;
+		
+		c2 = sc.nextInt();
+		n2 = sc.nextInt();
+		v2 = sc.nextDouble();
+		
+		valorPago2 = n2 * v2;
+		
+		total = valorPago1 + valorPago2;
+		
+		System.out.printf(" VALOR A PAGAR: R$ %.2F%n" , total);
+		
+		
+		sc.close();
+	}
+
+}
